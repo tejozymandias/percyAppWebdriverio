@@ -22,6 +22,7 @@ npm i
 `export PERCY_TOKEN=[your-project-token]`
 - Install Percy CLI and Percy Appium dependencies.
 `npm install --save-dev @percy/cli`
+`npm install --save-dev @percy/appium-app`
 
 - A sample test script is already available in single_test.js file under android>examples> run-sample-test>spec folder. Refer [Documentation](https://www.browserstack.com/docs/app-percy/integrate/webdriverio-javascript)for more help.
 
