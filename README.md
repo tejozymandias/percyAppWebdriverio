@@ -26,11 +26,13 @@ npm install --save-dev @percy/cli
 npm install --save-dev @percy/appium-app
 ```
 
-- A sample test script is already available in single_test.js file under android>examples> run-sample-test>spec folder. Refer [Documentation](https://www.browserstack.com/docs/app-percy/integrate/webdriverio-javascript)for more help.
+- Visit single_test.js file under android>examples> run-sample-test>spec folder. 
+- Update your BrowserStack UserName & Accesskey. Refer [Documentation](https://www.browserstack.com/docs/app-percy/integrate/webdriverio-javascript)for more help.
 
 
 ### Run sample test:
 
 - To run parallel tests, run `npm run test`
+- Visit the App-Automate [Dashboard](https://app-automate.browserstack.com/dashboard/v2) to your webdriverio tests, simultanously visit the App Percy [Dashboard](https://percy.io/) to view your App Percy Build.
 
 
