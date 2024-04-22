@@ -1,6 +1,6 @@
 exports.config = {
-  user: 'tejendra_UwDiBS',
-  key: 'vieACoa4poN3yrH9Vsgp',
+  user: 'BrowserstackUserName',
+  key: 'BrowserstacAccesskey',
 
   hostname: 'hub.browserstack.com',
 
