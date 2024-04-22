@@ -1,6 +1,6 @@
 exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
-  key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+  user: 'BROWSERSTACK_USERNAME',
+  key: 'BROWSERSTACK_ACCESSKEY',
 
   services: [
     [
@@ -28,8 +28,8 @@ exports.config = {
 
   commonCapabilities: {
     'bstack:options': {
-      projectName: "BrowserStack Samples",
-      buildName: 'browserstack build',
+      projectName: "wdio-percy-project",
+      buildName: 'wdio-percy-build',
       sessionName: 'BStack parallel webdriverio-appium',
       debug: true,
       networkLogs: true,

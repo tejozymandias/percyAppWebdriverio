@@ -1,6 +1,6 @@
 exports.config = {
-  user: process.env.BROWSERSTACK_USERNAME || 'BROWSERSTACK_USERNAME',
-  key: process.env.BROWSERSTACK_ACCESS_KEY || 'BROWSERSTACK_ACCESS_KEY',
+  user: 'tejendra_UwDiBS',
+  key: 'vieACoa4poN3yrH9Vsgp',
 
   hostname: 'hub.browserstack.com',
 
@@ -18,24 +18,30 @@ exports.config = {
 
   capabilities: [{
     'bstack:options': {
-      deviceName: 'Google Pixel 3',
-      osVersion: "9.0"
+      deviceName: 'Samsung Galaxy S22 Ultra',
+      platformVersion: '12.0',
+      platformName: 'android',
     }
   }, {
     'bstack:options': {
-      deviceName: 'Samsung Galaxy S10e',
-      osVersion: "9.0"
+      deviceName: 'Google Pixel 7 Pro',
+      platformVersion: '13.0',
+      platformName: 'android',
+    } }, {
+    'bstack:options': {
+      deviceName: 'OnePlus 9',
+      platformVersion: '11.0',
+      platformName: 'android',
     }
   }],
 
   commonCapabilities: {
     'bstack:options': {
-      projectName: "BrowserStack Samples",
-      buildName: 'browserstack build',
+      projectName: "wdio-appium-project",
+      buildName: 'wdio-appium build',
       sessionName: 'BStack parallel webdriverio-appium',
       debug: true,
-      networkLogs: true,
-      source: 'webdriverio:appium-sample-sdk:v1.0'
+      networkLogs: true
     }
   },
 

@@ -4,7 +4,7 @@
   "readme": "WendriverIO Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for WebdriverIO and BrowserStack App Automate",
   "scripts": {
-    "test": "npx wdio examples/run-sample-test/test.conf.js",
+    "test": "npx percy app:exec -- wdio examples/run-sample-test/test.conf.js",
     "local": "npx wdio examples/run-local-test/local.conf.js"
   },
   "repository": {
@@ -27,6 +27,8 @@
     "webdriverio": "^7"
   },
   "devDependencies": {
+    "@percy/appium-app": "^2.0.5",
+    "@percy/cli": "^1.28.3",
     "@wdio/browserstack-service": "^7",
     "@wdio/local-runner": "^7",
     "@wdio/mocha-framework": "^7"

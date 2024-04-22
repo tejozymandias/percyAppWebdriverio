@@ -1,4 +1,5 @@
 var assert = require('assert');
+const percyScreenshot = require('@percy/appium-app');
 
 describe('Search Wikipedia Functionality', () => {
   it('can find search results', async () => {
@@ -14,5 +15,11 @@ describe('Search Wikipedia Functionality', () => {
 
     var allProductsName = await $$(`android.widget.TextView`);
     assert(allProductsName.length > 0);
+  });
+});
+
+describe('Appium webdriverio test example', function() {
+  it('takes a screenshot', async () => {
+    await percyScreenshot(driver,'Appium FirstScreenshot');
   });
 });
